@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <script src ="Post.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+        <script src ="pages.js"></script>
+        
+    </head>
+    <body class ="steelersTheme">
+    <!--<body>-->
+        <!--This is the initial/home page for navigation -->
+        <div id="home">
+            <p>Welcome to the CSS Styles Homepage. <br> Learn and contribute to the knowledge base of Design Patterns.</p>
+            <button id="fact_Design_Patt" type="button">Factory Design Patterns</button>
+        
+        </div>
+        
+        <!--This is the screen that shows all of the blogposts-->
+        <div class="hidden" id="blogPosts">
+            <button id="addAPost" type="button">Add a Blog</button>
+            <div id="blogs"></div>
+            <!--<p id="allBlogs"></p>-->
+            <!--<p>This is the home Screen of all possible Posts.</p>    -->
+        </div>
+            
+        <!--This shows an individual Post-->
+        <div class ="hidden" id="indPost">
+            <p id="post_Title"></p>
+            <p id="post_Author"></p>
+            <p id="post_Contents"></p>
+            <!--<p>This is an individual post.</p>-->
+            <button id="postHome" type="button">Return to Blog Post Home</button>
+
+            
+        </div>
+        
+        <!--This shows the add a post Screen-->
+        <div class = "hidden" id="addPost">
+            <div class = "block">
+                <label for="nameString">Title</label>
+                <input type="String" id ="nameString" value="" />
+            </div>
+           <div class = "block">
+                <label for="authorString">Author</label>
+                <input type="String" id ="authorString" value="" />
+           </div>
+            
+            <textarea  id="blogText" rows="10" cols="40"></textarea>
+            <div>
+                <button id="publishPost" type="button">Post Blog</button>
+                <button id="postBack" type="button">Return to Blog Post Home</button>
+
+            </div>
+        </div>
+        <div class = "nav">
+            
+        </div>
+        
+    </body>
+    
+</html>

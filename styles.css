@@ -1,0 +1,22 @@
+.hidden {
+    display: none;
+}
+
+.block{
+    display:block;
+}
+
+.uDTheme{
+    background-color:blue;
+    color:gold;
+}
+
+uCTheme{
+    background-color:blue;
+    color:white;
+}
+
+steelersTheme{
+    background-color:black;
+    color: gold;
+}
